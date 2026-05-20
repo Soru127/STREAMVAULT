@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STREAMVAULT</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      STREAM<span>VAULT</span>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search videos...">
+      <button onclick="searchVideos()">Search</button>
+    </div>
+
+    <div class="nav-buttons">
+      <button class="upload-btn">Upload</button>
+      <button class="login-btn">Login</button>
+    </div>
+  </nav>
+
+  <!-- Layout -->
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Categories</h2>
+
+      <button class="category">🔥 Trending</button>
+      <button class="category">🆕 New</button>
+      <button class="category">🎬 Old</button>
+      <button class="category">💎 HD</button>
+      <button class="category">🎮 Gaming</button>
+      <button class="category">🎵 Music</button>
+      <button class="category">📚 Education</button>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+
+      <!-- Hero -->
+      <section class="hero">
+        <h1>Watch, Upload & Download Videos</h1>
+
+        <p>
+          STREAMVAULT is a modern video streaming platform where users
+          can watch videos, upload content and download videos easily.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="explore-btn">Explore Videos</button>
+          <button class="upload-video-btn">Upload Video</button>
+        </div>
+      </section>
+
+      <!-- Videos -->
+      <h2 class="section-title">Trending Videos</h2>
+
+      <div class="video-grid" id="videoGrid">
+
+        <!-- Card -->
+        <div class="video-card">
+          <img class="thumbnail"
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop">
+
+          <div class="video-info">
+            <div class="video-title">Nature Cinematic HD</div>
+
+            <div class="video-meta">
+              <span>12K Views</span>
+              <span class="tag">HD</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="watch-btn">Watch</button>
+              <button class="download-btn">Download</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="video-card">
+          <img class="thumbnail"
+            src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop">
+
+          <div class="video-info">
+            <div class="video-title">Gaming Montage 2026</div>
+
+            <div class="video-meta">
+              <span>25K Views</span>
+              <span class="tag">NEW</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="watch-btn">Watch</button>
+              <button class="download-btn">Download</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="video-card">
+          <img class="thumbnail"
+            src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop">
+
+          <div class="video-info">
+            <div class="video-title">Classic Retro Movie</div>
+
+            <div class="video-meta">
+              <span>7K Views</span>
+              <span class="tag">OLD</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="watch-btn">Watch</button>
+              <button class="download-btn">Download</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <footer>
+        © 2026 STREAMVAULT
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
